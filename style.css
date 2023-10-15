@@ -1,0 +1,282 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    display: flex;
+}
+
+.sidebar{
+    width: 373px;
+    height:86vh;
+}
+.sidebar-header{
+    width:100%;
+    height: 156px;
+    background-color: #121212;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+.logo{
+    width:100%;
+    height: 44px;
+}
+.logo>img{
+    height: 1.5rem;
+    margin: 0.5rem;
+}
+.sidebar-nav{
+    width: 100%;
+    height: 112px;
+    opacity: 0.7;
+}
+.fa-solid{
+    opacity: 0.7;
+}
+.sidebar-nav:hover{
+    opacity:1;
+}
+.sidebar-nav>div{
+    padding: 0.25rem 0.75rem;
+    line-height: 40px;
+}
+
+.lib{
+    width:100%;
+    height: 445px;
+    background-color: #121212;
+    border-radius: 10px;
+}
+.lib-head{
+    line-height: 40px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-main{
+    height:150px;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    overflow: auto;
+}
+.lib-box{
+    height:140px;
+    background-color: #242424;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0rem;
+    border-radius: 10px;
+}
+.box-text{
+    margin-bottom: 1rem;
+}
+#badge-lib{
+    font-weight: 550;
+    background-color: white;
+    color: black;
+    width:fit-content;
+    padding: 0 1rem;
+    height:2rem;
+    border-radius:1rem;
+    border:0px;
+}
+/* .lib-foot{
+   
+    
+} */
+.lib-foot ul{
+    padding: 20px;
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.lib-foot li{
+    font-size: 0.75rem;
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+    opacity: 0.7;
+}
+.lang{
+    margin: 30px;
+    
+}
+
+.main-content{
+    
+    overflow: auto;
+    flex:1;
+    margin: 0px 10px;
+    border-radius: 10px;
+    background-color: #121212;
+}
+.main-nav{
+    position: sticky;
+    top:0px;
+    line-height: 50px;
+    padding: 0.5rem 1rem;
+    background-color: #101010;
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.main-nav-btn>div{
+    font-size: 0.9rem;
+    line-height: 2rem;
+    padding:0.5rem 2rem;
+}
+.main-nav i{
+    padding: 0.5rem;
+}
+
+.main-section{
+    
+    padding-top: 0.5rem;
+}
+.main-albums{
+    padding:0 1rem;
+}
+.main-main{
+    margin:0 0 1rem 0;
+}
+.main-title{
+    line-height: 1.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.album-cards{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+.al-card{
+    width: 175px;
+    height: 266px;
+    background-color: #171717;
+    padding: 1rem;
+    margin:0 0.5rem 0.5rem 0;
+    border-radius: 10px;
+}
+.al-card>img{
+    width: 139px;
+    height: 139px;
+}
+
+.main-footer{
+    width:100%;
+    display:flex;
+    justify-content:center ;
+}
+.end{
+    height:100px;
+    width: 90%;
+
+    border-top:2px solid rgba(255,255,255,0.2);
+}
+/* https://github.com/apna-college/Delta/tree/main/CSS/Project/assets */
+.player{
+    height:10vh;
+    width:100vw;
+    margin: 0px 0.7rem 0.7rem 0px;
+    position:fixed;
+    bottom:0px;
+    background-color: #000;
+    display:flex;
+}
+.player-album{
+    display: flex;
+    padding:1rem;
+    width:25%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.al-name{
+    margin:0 0.5rem;
+}
+.art{
+    font-size: 1rem;
+    margin-bottom:0.25rem;
+}
+.artist{
+    font-size: 0.75rem;
+    opacity: 0.5;
+    margin-bottom:0.25rem;
+}
+.heart>i{
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+.player-controls{
+    width:47%;
+}
+.player-settings{
+    width:25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.player-settings i{
+    padding:0.5rem;
+    font-size: 1rem;
+    opacity: 0.7;
+    
+}
+.control-btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.control-btn i{
+    padding:0.5rem;
+    font-size: 1.25rem;
+    opacity: 0.7;
+}
+.status{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.time{
+    font-size:0.75rem;
+    padding:0 0.5rem;
+    opacity: 0.6;
+}
+i:hover{
+    opacity:1;
+}
+
+
+.lib-main::-webkit-scrollbar{
+    background-color: #242424;
+}
+.lib-main::-webkit-scrollbar-thumb{
+    background-color: #101010;
+    border-radius: 15px ;
+    border:2px solid #212529;
+}
+.main-content::-webkit-scrollbar{
+    background-color: #242424;
+}
+.main-content::-webkit-scrollbar-thumb{
+    background-color: #101010;
+    border-radius: 15px ;
+    border:2px solid #212529;
+}
+
+.colo:hover{
+    color:#fff;
+}
+.al-name>p:hover,.time:hover{
+    color: #fff;
+    opacity: 0.7;
+}
